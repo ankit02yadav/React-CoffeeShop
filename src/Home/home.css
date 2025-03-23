@@ -1,0 +1,117 @@
+.home{
+    min-height: 100vh;
+    background: url(../assets/home.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: rgba(40, 32, 32, 0.908);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    /* top: 0; */
+}
+.navbar .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .logo .logo-name{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: mintcream;
+}
+.navbar img{
+    height: 100%;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li{
+    margin: 12px;
+    color: white;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+}
+.navbar ul li a::before{
+    content: " ";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 0px;
+    border-radius: 4px;
+    transition: .4s;
+    height: 3px;
+    background: brown;
+}
+.navbar ul li a:hover::before{
+    width: 100%;
+}
+.container-home{
+    width: 30%;
+    display: flex;
+    float: right;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* border: 2px solid red; */
+    margin: 0px 50px 0px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-home h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+.container-home h1{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container-home button{
+    width: 130px;
+    height: 40px;
+    border-radius: 60px;
+    background: mintcream;
+    border: none;
+    color: rgb(70, 28, 28);
+    font-size: 20px;
+    cursor:pointer;
+}
+@media screen and (max-width: 500px) {
+    .navbar ul li {
+        font-size: 14px;
+    }
+    .navbar .logo .logo-name{
+        display: none;
+    }
+    .container-home{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 20px;
+    }
+    .container-home h1{
+        font-size: 1.rem;
+        
+    }
+}

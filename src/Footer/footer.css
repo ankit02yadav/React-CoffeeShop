@@ -1,0 +1,73 @@
+.footer{
+    background: rgb(36, 9, 5);
+    background: url(../assets//footer.jpg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: whitesmoke;
+    height: 70vh;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    padding: 10% 20%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer h2{
+    font-size: 18px;
+    margin: 40px 0px;
+    font-weight: 600;
+}
+.footer a{
+    color: chocolate;
+}
+.sunny{
+    font-size: 16px;
+    margin: 40px 0px;
+}
+.about-us-footer{
+    width: 45%;
+}
+.news-footer{
+    width: 30%;
+}
+.footer input{
+    margin: 20px 0px;
+    width: 60%;
+    height: 30px;
+    padding-left: 10px;
+}
+.news-footer button{
+    height: 30px;
+    width: 30px;
+    background: chocolate;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.no{
+    margin: 20px 0px;
+}
+/* .ffff{
+    color:rgb(197, 98, 0);
+} */
+
+@media screen and (max-width: 500px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        position: relative;
+    }
+    .about-us-footer{
+        width: 100%;
+    }
+    .news-footer{
+        width: 100%;
+    }
+    .contact-footer{
+        position: absolute;
+        right: 100px;
+        bottom: 80px;
+        /* border: 2px solid red; */
+    }
+}

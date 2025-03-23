@@ -1,0 +1,76 @@
+.about{
+    background: rgb(36, 9, 5);
+    background: url(../assets/About2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+}
+.container-about{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+}
+.vedio {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.vedio video{
+    width: 77%;
+    /* border: 2px solid black; */
+    border-radius: 10px
+}
+.content{
+    /* border: 2px solid red; */
+    height: 350px;
+    color: rgb(158, 98, 35);
+    color: rgb(174, 115, 47);
+    color: white;
+    width: 60%;
+}
+.content p{
+    color:  rgb(125, 57, 24);
+
+}
+.content h2{
+    font-size: 2.3rem;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.content span{
+    color:  rgb(125, 57, 24);
+    margin-bottom: 7px;
+}
+.content .summery{
+    margin: 5px 0px 8px 0px;
+}
+.content details span{
+    text-decoration: line-through;
+    text-decoration-color: aliceblue;
+}
+.content  summary{
+    color:  rgb(125, 57, 24);
+    margin: 4px 0px;
+    cursor:pointer;
+
+}
+.content details p {
+    color: rgb(186, 49, 0);
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .about{
+        height: 150vh;
+    }
+    .container-about{
+        display: flex;
+        flex-direction: column;
+    }
+}
